@@ -2,4 +2,9 @@
 /.gradle/
 /app/build/
 /build/
-/SeekArc_library/build/
+/SeekArc_library/build/# Archivos sensibles - NO SUBIR
+*.jks
+*.keystore
+google-services.json
+app/release/
+*.apk
