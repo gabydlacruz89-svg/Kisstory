@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Kisstory Radio UK Live</string>
+    <string name="info_copyright">©2026 Superappsmx</string>
+    <string name="title_home_screen">Radio UK live</string>
+
+    <string name="title_settings">Settings</string>
+    <string name="info_loading">Please wait…</string>
+    <string name="title_yes">Yes</string>
+    <string name="title_no">No</string>
+    <string name="title_ok">OK</string>
+    <string name="title_cancel">Cancel</string>
+    <string name="title_info">Information</string>
+    <string name="title_options">Options</string>
+    <string name="title_confirm">Confirm</string>
+    <string name="title_warning">Warning</string>
+    <string name="title_share">Share</string>
+    <string name="title_back">Back</string>
+    <string name="title_unknown">Unknown</string>
+    <string name="title_about_us">About Us</string>
+    <string name="title_done">Done</string>
+    <string name="title_search">Search</string>
+    <string name="title_no_data">No data</string>
+    <string name="title_rate_me">Rate me now</string>
+    <string name="support_radio">Support the Radio ❤️</string>
+
+
+    <string name="info_lose_internet">No internet connection. Please check again!</string>
+    <string name="info_empty">Please enter the keyword!</string>
+    <string name="info_close_app">Do you want to exit the application?</string>
+    <string name="info_server_error">We can not connect to server. Please try again!</string>
+    <string name="info_press_again_to_exit">Press Back button again to exit app</string>
+    <string name="info_loading_more">Loading More…</string>
+
+    <string name="icon_play">&#xea7d;</string>
+    <string name="icon_add">&#xea81;</string>
+    <string name="icon_check">&#xe867;</string>
+    <string name="icon_chevron_right">&#xe876;</string>
+    <string name="icon_menu">&#xe8cf;</string>
+    <string name="icon_pause">&#xea64;</string>
+    <string name="icon_heart">&#xe9b6;</string>
+    <string name="icon_heart_outline">&#xe9b5;</string>
+    <string name="icon_share">&#xeac0;</string>
+    <string name="icon_comment">&#xe8a1;</string>
+    <string name="icon_play_outline">&#xea7b;</string>
+    <string name="icon_pause_outline">&#xea60;</string>
+    <string name="icon_info">&#xe9d5;</string>
+    <string name="icon_chevron_left">&#xe875;</string>
+
+    <string name="info_error_sdcard">Your storage is almost full that why we can not start app. Please clean your storage</string>
+    <string name="info_permission_denied">Sorry permission denied. We can not open this app on your device, please try again later.</string>
+
+    <string name="info_share_app">Let start with %1$s now %2$s</string>
+    <string name="title_more_apps">More Apps</string>
+    <string name="title_contact_us">Contact us</string>
+    <string name="title_menu_share">Tell a friend</string>
+
+    <string name="title_tab_top_chart">Featured</string>
+    <string name="title_tab_radios">Radios</string>
+    <string name="title_tab_discover">Genres</string>
+    <string name="title_tab_favorite">Favorite</string>
+    <string name="title_tab_themes">Themes</string>
+
+    <string name="title_privacy_policy">Privacy Policy</string>
+    <string name="title_term_of_use">Term of Use</string>
+    <string name="title_facebook">Visit Our Facebook</string>
+    <string name="title_twitter">Visit Our Twitter</string>
+    <string name="title_website">Visit Our Website</string>
+    <string name="title_instagram">Visit Our Instagram</string>
+
+    <string name="format_buffering">Buffering: %1$s</string>
+    <string name="format_bitrate">Bitrate: %1$s</string>
+
+    <string name="info_content_share">%1$s on Android!\nCheck it out\n%2$s</string>
+    <string name="info_connect_to_play">Please connect to internet to play this radio</string>
+    <string name="info_play_error">Sorry we can not play this radio at this time, We will back as soon as possible</string>
+
+
+    <string name="info_single_radio_error">Radio data is error. Please check again</string>
+
+    <string name="title_sleep_mode">Sleep Mode</string>
+    <string name="title_off">OFF</string>
+    <string name="format_minutes">%1$s minutes</string>
+    <string name="format_minute">%1$s minute</string>
+
+    <string name="info_radio_ended_title">Radio is ended</string>
+    <string name="info_radio_ended_sub">You can change to new radio or play again.</string>
+    <string name="info_connection_lost">Connect to internet to play again</string>
+
+    <string name="format_term_and_conditional"><![CDATA[Thank for choosing <b>%1$s</b>.<br>By using this app, you must agree to our <a href=\"%2$s\"><b>Terms Of Use</b></a> and our <a href=\"%3$s\"><b>Privacy Policy</b></a>.]]></string>
+    <string name="title_agree">Yes, I agree</string>
+    <string name="format_request_permission"><![CDATA[Thank for choosing <b>%1$s</b>. Please give us the below permission:<br><br><b>SDCARD PERMISSION:</b> It will help us to save your favorite radio list.]]></string>
+    <string name="title_give_it">Give It Now</string>
+
+    <string name="title_setting_ads" >Setting Advertisement</string>
+    <string name="format_request_permission_13"><![CDATA[Thank you for choosing <b>%1$s</b>. Please allow the following permissions:<br><br><b>NOTIFICATION PERMISSION:</b> It will allow app to show the control notification when listening live radio.]]></string>
+
+
+    <string name="format_subject_report_radio" translatable="false">Error Radio: %1$s</string>
+    <string name="format_info_report_radio" translatable="false">Radio Station %1$s has been stopped. Please check again this radio station.</string>
+
+    <string name="new_bottom_sheet_behavior">com.behavior.model.YPYBottomSheetBehavior</string>
+
+
+</resources>

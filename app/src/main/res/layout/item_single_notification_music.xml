@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2018. YPY Global - All Rights Reserved.
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at.
+  ~
+  ~         http://ypyglobal.com/sourcecode/policy
+  ~
+  ~ Unless required by applicable law or agreed to in writing,
+  ~ software distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/layout_root"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/row_height_normal"
+        android:background="@color/color_noti_background">
+        <Button
+            android:id="@+id/btn_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/small_margin"
+            android:background="@drawable/ic_close_white_36dp"
+            android:minHeight="1sp"
+            android:minWidth="1sp"
+            android:stateListAnimator="@null"/>
+
+        <ImageView
+            android:id="@+id/img_play"
+            android:layout_width="@dimen/row_height_normal"
+            android:layout_height="@dimen/row_height_normal"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_rect_img_default"
+            android:visibility="visible"/>
+
+        <ImageView
+            android:id="@+id/btn_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/btn_stop"
+            android:layout_marginEnd="@dimen/dialog_margin"
+            android:background="@null"
+            android:minHeight="1sp"
+            android:minWidth="1sp"
+            android:src="@drawable/ic_play_arrow_white_36dp"
+            android:stateListAnimator="@null"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/small_margin"
+            android:layout_marginEnd="@dimen/small_margin"
+            android:layout_toStartOf="@+id/btn_play"
+            android:layout_toEndOf="@+id/img_play"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_radio_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:singleLine="true"
+                android:text="@string/app_name"
+                android:gravity="start"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_size_body"/>
+
+            <TextView
+                android:id="@+id/tv_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="start"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:text="@string/app_name"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_tab"
+                >
+                <requestFocus
+                    android:duplicateParentState="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"/>
+            </TextView>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

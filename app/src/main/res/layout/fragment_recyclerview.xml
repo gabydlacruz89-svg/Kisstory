@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swiperefresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/footer_view">
+
+            <com.ypyglobal.xradio.ypylibs.view.YPYRecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none"/>
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+        <TextView
+            android:id="@+id/tv_no_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:gravity="center_horizontal"
+            android:singleLine="true"
+            android:text="@string/title_no_data"
+            android:textColor="@color/main_color_text"
+            android:textSize="@dimen/text_size_body"
+            android:visibility="gone" />
+
+        <com.ypyglobal.xradio.ypylibs.view.CircularProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="@dimen/height_process_bar"
+            android:layout_height="@dimen/height_process_bar"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            app:cpb_color="@color/progressbar_color"
+            app:cpb_stroke_width="@dimen/stroke_process" />
+
+        <include
+            android:id="@+id/footer_view"
+            layout="@layout/item_footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone"/>
+
+
+    </RelativeLayout>
+</layout>

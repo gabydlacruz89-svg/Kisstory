@@ -1,0 +1,56 @@
+{
+  "status": 200,
+  "msg": "success",
+  "datas": [
+    {
+      "id": 10,
+      "name": "Pop",
+      "img": "file:///android_asset/img_genres/genre_94764_pop.jpg"
+    },
+    {
+      "id": 9,
+      "name": "RnB Soul",
+      "img": "file:///android_asset/img_genres/genre_44634_rnb.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Gospel",
+      "img": "file:///android_asset/img_genres/genre_63332_gospel.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Country",
+      "img": "file:///android_asset/img_genres/genre_32178_country.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Rock",
+      "img": "file:///android_asset/img_genres/genre_79828_rock.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Jazz",
+      "img": "file:///android_asset/img_genres/genre_88902_jazz.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Deep House",
+      "img": "file:///android_asset/img_genres/genre_61591_deephouse.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Dubstep",
+      "img": "file:///android_asset/img_genres/genre_86053_dubstep.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Ambient",
+      "img": "file:///android_asset/img_genres/genre_94121_ambient.jpeg"
+    },
+    {
+      "id": 1,
+      "name": "Rap HipHop",
+      "img": "file:///android_asset/img_genres/genre_17511_hiphop.jpg"
+    }
+  ]
+}

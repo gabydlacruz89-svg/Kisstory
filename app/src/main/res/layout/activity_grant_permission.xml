@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/layout_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/give_permission_bg_color"
+        android:fitsSystemWindows="true">
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/layout_bottom"
+                    android:layout_marginTop="?android:attr/actionBarSize"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/img_logo"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_icon_permission"
+                        android:layout_gravity="center_horizontal"
+                        app:srcCompat="@drawable/logo_splash" />
+
+                    <TextView
+                        android:id="@+id/tv_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/activity_horizontal_margin"
+                        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                        android:text="@string/format_request_permission"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_subhead" />
+
+                    <Button
+                        android:id="@+id/btn_allow"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/row_height_button"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/activity_horizontal_margin"
+                        android:background="@color/white"
+                        android:layout_marginStart="@dimen/size_img_small"
+                        android:layout_marginEnd="@dimen/size_img_small"
+                        android:singleLine="true"
+                        android:text="@string/title_give_it"
+                        android:textAllCaps="true"
+                        android:textColor="@color/give_permission_bg_color"
+                        android:textSize="@dimen/text_size_body"
+                        android:textStyle="bold"/>
+
+                    <Button
+                        android:id="@+id/btn_skip"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/row_height_button"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/activity_horizontal_margin"
+                        android:background="@color/white"
+                        android:layout_marginStart="@dimen/size_img_small"
+                        android:layout_marginEnd="@dimen/size_img_small"
+                        android:singleLine="true"
+                        android:text="@string/title_skip"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_body"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/layout_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_img_medium"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/small_margin"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.balysv.materialripple.MaterialRippleLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_toStartOf="@+id/divider"
+                        app:mrl_rippleAlpha="0.2"
+                        app:mrl_rippleColor="@color/ripple_effect_color"
+                        app:mrl_rippleHover="true"
+                        app:mrl_rippleOverlay="true">
+
+                        <TextView
+                            android:id="@+id/tv_policy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:paddingStart="@dimen/dialog_margin"
+                            android:paddingEnd="@dimen/dialog_margin"
+                            android:singleLine="true"
+                            android:text="@string/title_privacy_policy"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_subhead"
+                            android:textStyle="bold" />
+                    </com.balysv.materialripple.MaterialRippleLayout>
+
+
+                    <View
+                        android:id="@+id/divider"
+                        android:layout_width="@dimen/divider"
+                        android:layout_height="@dimen/size_img_tiny"
+                        android:layout_centerInParent="true"
+                        android:background="@color/white" />
+
+                    <com.balysv.materialripple.MaterialRippleLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/divider"
+                        app:mrl_rippleAlpha="0.2"
+                        app:mrl_rippleColor="@color/ripple_effect_color"
+                        app:mrl_rippleHover="true"
+                        app:mrl_rippleOverlay="true">
+
+                        <TextView
+                            android:id="@+id/tv_tos"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:paddingStart="@dimen/dialog_margin"
+                            android:paddingEnd="@dimen/dialog_margin"
+                            android:singleLine="true"
+                            android:text="@string/title_term_of_use"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_subhead"
+                            android:textStyle="bold" />
+                    </com.balysv.materialripple.MaterialRippleLayout>
+
+
+                </RelativeLayout>
+            </RelativeLayout>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,76 @@
+{
+  "status": 200,
+  "msg": "success",
+  "datas": [
+    {
+      "id": 1,
+      "name": "Sleepless Night",
+      "img": "file:///android_asset/img_themes/theme_79076_bg.jpg",
+      "grad_start_color": "#5271c4",
+      "grad_end_color": "#eca1fe"
+    },
+    {
+      "id": 2,
+      "name": "Aqua Guidance",
+      "img": "",
+      "grad_start_color": "#007adf",
+      "grad_end_color": "#00ecbc"
+    },
+    {
+      "id": 3,
+      "name": "Smart Indigo",
+      "img": "",
+      "grad_start_color": "#b224ef",
+      "grad_end_color": "#7579ff"
+    },
+    {
+      "id": 4,
+      "name": "Orange Juice",
+      "img": "",
+      "grad_start_color": "#fc6076",
+      "grad_end_color": "#ff9a44"
+    },
+    {
+      "id": 5,
+      "name": "Plum Bath",
+      "img": "",
+      "grad_start_color": "#cc208e",
+      "grad_end_color": "#6713d2"
+    },
+    {
+      "id": 6,
+      "name": "Night Sky",
+      "img": "",
+      "grad_start_color": "#1e3c72",
+      "grad_end_color": "#2a5298"
+    },
+    {
+      "id": 7,
+      "name": "SeashoreGet",
+      "img": "",
+      "grad_start_color": "#209cff",
+      "grad_end_color": "#68e0cf"
+    },
+    {
+      "id": 8,
+      "name": "River City",
+      "img": "",
+      "grad_start_color": "#4481eb",
+      "grad_end_color": "#04befe"
+    },
+    {
+      "id": 9,
+      "name": "Le Cocktail",
+      "img": "",
+      "grad_start_color": "#874da2",
+      "grad_end_color": "#c43a30"
+    },
+    {
+      "id": 10,
+      "name": "Happy Memories",
+      "img": "",
+      "grad_start_color": "#ff5858",
+      "grad_end_color": "#f09819"
+    }
+  ]
+}

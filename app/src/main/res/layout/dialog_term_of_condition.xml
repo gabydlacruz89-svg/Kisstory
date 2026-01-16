@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_term_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/dialog_margin"
+        android:paddingEnd="@dimen/dialog_margin"
+        android:paddingBottom="@dimen/dialog_margin"
+        android:text="@string/format_term_and_conditional"
+        android:textColor="@color/dialog_color_text"
+        android:textSize="@dimen/text_size_subhead" />
+
+</LinearLayout>

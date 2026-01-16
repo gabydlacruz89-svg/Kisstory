@@ -1,0 +1,12 @@
+{
+  "status": 200,
+  "msg": "success",
+  "datas": [
+    {
+      "url_endpoint": "https://kisstory.appmovil.top/",
+      "api_key": "eHJhZGlvcGVyZmVjdGFwcA",
+      "lastfm_api_key": "f624da874f7d23dcc010b9fe739b1ca6",
+      "cache_expiration": 0
+    }
+  ]
+}

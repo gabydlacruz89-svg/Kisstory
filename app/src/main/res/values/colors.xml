@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ===== COLORES PRINCIPALES ===== -->
+    <color name="colorPrimary">#2A1B12</color>        <!-- Marrón oscuro -->
+    <color name="colorPrimaryDark">#1B120C</color>   <!-- Fondo principal -->
+    <color name="colorAccent">#C9A24D</color>        <!-- Dorado vintage -->
+
+    <color name="give_permission_bg_color">#9E7E3A</color>
+
+    <!-- ===== BACKGROUNDS ===== -->
+    <color name="color_background">#1B120C</color>
+    <color name="color_splash_background">#2A1B12</color>
+    <color name="color_load_more_background">#24170F</color>
+    <color name="color_noti_background">#3A2618</color>
+
+    <color name="card_view_background">#24170F</color>
+
+    <!-- ===== TABS ===== -->
+    <color name="tab_background_color">@android:color/transparent</color>
+    <color name="tab_overlay_color">#4024170F</color>
+    <color name="tab_indicator_color">#C9A24D</color>
+    <color name="tab_text_focus_color">#F2A65A</color>
+    <color name="tab_text_normal_color">#8AB7A98B</color>
+
+    <!-- ===== GRID ===== -->
+    <color name="grid_view_bg_color">#2A1B12</color>
+    <color name="grid_view_color_main_text">#EFE2C4</color>
+    <color name="grid_view_color_secondary_text">#B7A98B</color>
+
+    <!-- ===== LIST ===== -->
+    <color name="list_view_bg_color">#1B120C</color>
+    <color name="list_view_color_main_text">#EFE2C4</color>
+    <color name="list_view_color_secondary_text">#8AB7A98B</color>
+    <color name="list_view_color_divider">#3A2618</color>
+
+    <!-- ===== ICONOS ===== -->
+    <color name="icon_action_bar_color">#C9A24D</color>
+    <color name="icon_color">#C9A24D</color>
+
+    <!-- ===== PROGRESS ===== -->
+    <color name="progressbar_color">#F2A65A</color>
+    <color name="progressbar_splash">#C9A24D</color>
+
+    <!-- ===== RIPPLE ===== -->
+    <color name="ripple_effect_color">#4024170F</color>
+
+    <!-- ===== TEXTO HOME ===== -->
+    <color name="main_color_text">#EFE2C4</color>
+    <color name="main_color_secondary_text">#B7A98B</color>
+
+    <!-- ===== PLAYER ===== -->
+    <color name="play_color_text">#F2E6C8</color>
+    <color name="play_color_secondary_text">#C9A24D</color>
+
+    <!-- ===== DIALOGOS ===== -->
+    <color name="dialog_color_text">#EFE2C4</color>
+    <color name="dialog_color_secondary_text">#B7A98B</color>
+    <color name="dialog_color_accent">#C9A24D</color>
+    <color name="dialog_bg_color">#24170F</color>
+
+    <!-- ===== OTROS ===== -->
+    <color name="default_image_color">#3A2618</color>
+    <color name="bottom_player_bg_color">#24170F</color>
+    <color name="seek_bar_color">#F2A65A</color>
+    <color name="float_button_color">#C9A24D</color>
+    <color name="ripple_button_color">#8AF2A65A</color>
+
+    <!-- BASE -->
+    <color name="black">#000000</color>
+    <color name="white">#EFE2C4</color>
+    <color name="grey">#3A2618</color>
+    <color name="overlay_color">#661B120C</color>
+
+</resources>

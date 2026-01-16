@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--    Ad types can be facebook or admob-->
+    <string name="ad_type">admob</string>
+
+    <!--    Splash Ad types can be open_ad or interstitial-->
+    <string name="splash_ad_type">open_ad</string>
+
+    <!--    if you use facebook, you can register one app id on admob too to put in here to avoid crash-->
+    <string name="admob_app_id">ca-app-pub-6096906922082278~5432887755</string>
+    <string name="publisher_id">pub-6096906922082278</string>
+    <string name="banner_id">ca-app-pub-3940256099942544/2934735716</string>
+    <string name="interstitial_id">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="open_ad_id">ca-app-pub-3940256099942544/5575463023</string>
+    <string name="rewarded_id">ca-app-pub-3940256099942544/1712485313</string> <!-- TEST -->
+
+
+
+</resources>

@@ -1,0 +1,57 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">24dp</dimen>
+    <dimen name="activity_vertical_margin">24dp</dimen>
+
+    <dimen name="widget_margin_top">6dp</dimen>
+    <dimen name="my_button_width">48dp</dimen>
+
+    <dimen name="widget_margin">12dp</dimen>
+
+    <dimen name="padding_top_dialog">33dp</dimen>
+    <dimen name="row_height_normal">96dp</dimen>
+    <dimen name="row_height_small">75dp</dimen>
+    <dimen name="row_height_large">120dp</dimen>
+    <dimen name="row_height_big">132dp</dimen>
+    <dimen name="row_height_tab">81dp</dimen>
+
+    <dimen name="row_height_tiny">60dp</dimen>
+    <dimen name="row_height_button">66dp</dimen>
+    <dimen name="row_height_sale">83dp</dimen>
+    <dimen name="row_height_search_small">54dp</dimen>
+    <dimen name="row_height_explore_playlist">180dp</dimen>
+    <dimen name="height_edit_text">64dp</dimen>
+
+    <dimen name="dialog_margin">15sp</dimen>
+    <dimen name="size_img_medium">54sp</dimen>
+    <dimen name="size_img_small">36sp</dimen>
+    <dimen name="size_img_tiny">27sp</dimen>
+    <dimen name="size_img_large">64sp</dimen>
+    <dimen name="size_img_big">90sp</dimen>
+
+    <dimen name="tab_indicator_height">6dp</dimen>
+
+    <dimen name="small_margin">7sp</dimen>
+    <dimen name="top_list_margin">9sp</dimen>
+    <dimen name="tiny_margin">5sp</dimen>
+
+    <dimen name="divider">2dp</dimen>
+    <dimen name="text_size_small">18sp</dimen>
+
+    <dimen name="height_process_bar">45sp</dimen>
+    <dimen name="stroke_process">5sp</dimen>
+    <dimen name="height_pager">12sp</dimen>
+    <dimen name="app_bar_height">300dp</dimen>
+    <dimen name="fab_margin">24dp</dimen>
+    <dimen name="text_margin">24dp</dimen>
+    <dimen name="card_elevation">3dp</dimen>
+
+    <dimen name="text_size_tab">16dp</dimen>
+    <dimen name="height_item_category">180dp</dimen>
+    <dimen name="height_grid_theme">162dp</dimen>
+    <dimen name="size_image_play">285dp</dimen>
+
+
+
+</resources>

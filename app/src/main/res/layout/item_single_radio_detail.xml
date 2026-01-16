@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2018. YPY Global - All Rights Reserved.
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at.
+  ~
+  ~         http://ypyglobal.com/sourcecode/policy
+  ~
+  ~ Unless required by applicable law or agreed to in writing,
+  ~ software distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/layout_drag_drop_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_background"
+        android:fitsSystemWindows="true">
+
+        <RelativeLayout
+            android:id="@+id/layout_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/layout_info_play">
+
+            <TextView
+                android:id="@+id/tv_sleep_timer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/dialog_margin"
+                android:layout_marginTop="@dimen/small_margin"
+                android:gravity="center_horizontal"
+                android:singleLine="true"
+                android:text="00:11:11"
+                android:textColor="@color/play_color_text"
+                android:textSize="@dimen/text_size_headline"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/tv_sleep_timer">
+
+                <ImageView
+                    android:id="@+id/img_play_song"
+                    android:layout_width="@dimen/size_image_play"
+                    android:layout_height="@dimen/size_image_play"
+                    android:layout_centerInParent="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_big_circle_img_default" />
+                <eu.gsottbauer.equalizerview.EqualizerView
+                    android:id="@+id/equalizer"
+                    android:layout_width="@dimen/size_img_medium"
+                    android:layout_height="@dimen/size_img_small"
+                    android:layout_below="@id/img_play_song"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/small_margin"
+                    app:animationDuration="2000"
+                    app:barColor="@color/play_color_text"
+                    app:barCount="3"
+                    app:barWidth="@dimen/small_margin"
+                    app:marginLeft="1dp"
+                    app:marginRight="1dp"
+                    app:runInBatterySaveMode="true" />
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layout_info_play"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/layout_action"
+            android:layout_marginStart="@dimen/dialog_margin"
+            android:layout_marginEnd="@dimen/dialog_margin"
+            android:layout_marginBottom="@dimen/widget_margin"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_drag_song"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:gravity="center"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:text="@string/app_name"
+                android:textColor="@color/play_color_text"
+                android:textSize="@dimen/text_size_title"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_drag_singer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/info_copyright"
+                android:textColor="@color/play_color_secondary_text"
+                android:textSize="@dimen/text_size_subhead" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layout_action"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_img_medium"
+            android:layout_above="@+id/layout_volume"
+            android:layout_marginStart="@dimen/dialog_margin"
+            android:layout_marginEnd="@dimen/dialog_margin"
+            android:layout_marginBottom="@dimen/widget_margin"
+            android:gravity="center_horizontal"
+            android:weightSum="6">
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:id="@+id/layout_facebook"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                app:mrl_rippleAlpha="0.2"
+                app:mrl_rippleColor="@color/play_color_text"
+                app:mrl_rippleHover="true"
+                app:mrl_rippleOverlay="true">
+
+                <ImageView
+                    android:id="@+id/btn_facebook"
+                    android:layout_width="@dimen/size_img_medium"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_facebook_white_36dp" />
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:id="@+id/layout_twitter"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                app:mrl_rippleAlpha="0.2"
+                app:mrl_rippleColor="@color/play_color_text"
+                app:mrl_rippleHover="true"
+                app:mrl_rippleOverlay="true">
+
+                <ImageView
+                    android:id="@+id/btn_twitter"
+                    android:layout_width="@dimen/size_img_medium"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_twitter_white_36dp" />
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:id="@+id/layout_instagram"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                app:mrl_rippleAlpha="0.2"
+                app:mrl_rippleColor="@color/play_color_text"
+                app:mrl_rippleHover="true"
+                app:mrl_rippleOverlay="true">
+
+                <ImageView
+                    android:id="@+id/btn_instagram"
+                    android:layout_width="@dimen/size_img_medium"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_insta_white_36dp" />
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:id="@+id/layout_website"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                app:mrl_rippleAlpha="0.2"
+                app:mrl_rippleColor="@color/play_color_text"
+                app:mrl_rippleHover="true"
+                app:mrl_rippleOverlay="true">
+
+                <ImageView
+                    android:id="@+id/btn_website"
+                    android:layout_width="@dimen/size_img_medium"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_website_white_36dp" />
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:id="@+id/layout_share"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                app:mrl_rippleAlpha="0.2"
+                app:mrl_rippleColor="@color/play_color_text"
+                app:mrl_rippleHover="true"
+                app:mrl_rippleOverlay="true">
+
+                <ImageView
+                    android:id="@+id/btn_share"
+                    android:layout_width="@dimen/size_img_medium"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_share_white_36dp" />
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:id="@+id/layout_report"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                app:mrl_rippleAlpha="0.2"
+                app:mrl_rippleColor="@color/play_color_text"
+                app:mrl_rippleHover="true"
+                app:mrl_rippleOverlay="true">
+
+                <ImageView
+                    android:id="@+id/btn_report"
+                    android:layout_width="@dimen/size_img_medium"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_report_white_36dp" />
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_volume"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/layout_control"
+            android:layout_marginStart="@dimen/small_margin"
+            android:layout_marginEnd="@dimen/small_margin">
+
+            <com.warkiz.widget.IndicatorSeekBar
+                android:id="@+id/seekBar1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/img_volume_max"
+                android:layout_toEndOf="@+id/img_volume_off"
+                app:isb_max="100"
+                app:isb_progress="50"
+                app:isb_show_indicator="none"
+                app:isb_thumb_color="@color/seek_bar_color"
+                app:isb_track_background_color="@color/play_color_secondary_text"
+                app:isb_track_progress_color="@color/seek_bar_color" />
+
+            <ImageView
+                android:id="@+id/img_volume_off"
+                android:layout_width="@dimen/size_img_small"
+                android:layout_height="@dimen/size_img_small"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:src="@drawable/ic_volume_off_36dp" />
+
+            <ImageView
+                android:id="@+id/img_volume_max"
+                android:layout_width="@dimen/size_img_small"
+                android:layout_height="@dimen/size_img_small"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:src="@drawable/ic_volume_max_36dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_control"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <LinearLayout
+                android:id="@+id/layout_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fb_play"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:src="@drawable/ic_play_arrow_white_36dp"
+                    app:backgroundTint="@color/float_button_color" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_percent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:singleLine="true"
+                android:text="@string/format_buffering"
+                android:textColor="@color/play_color_text"
+                android:textSize="@dimen/text_size_subhead"
+                android:visibility="invisible" />
+
+            <com.wang.avi.AVLoadingIndicatorView
+                android:id="@+id/play_progressBar1"
+                style="@style/AVLoadingIndicatorView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="invisible"
+                app:indicatorColor="@color/play_color_text"
+                app:indicatorName="BallScaleMultipleIndicator" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</layout>

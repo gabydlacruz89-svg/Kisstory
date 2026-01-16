@@ -1,0 +1,18 @@
+{
+  "status": 200,
+  "msg": "success",
+  "datas": [
+    {
+      "id": 1,
+      "is_full_bg": 1,
+      "ui_top_chart": 4,
+      "ui_genre": 5,
+      "ui_favorite": 4,
+      "ui_themes": 3,
+      "ui_detail_genre": 4,
+      "ui_player": 3,
+      "ui_search": 4,
+      "app_type":2
+    }
+  ]
+}

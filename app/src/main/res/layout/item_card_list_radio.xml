@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2018. YPY Global - All Rights Reserved.
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at.
+  ~
+  ~         http://ypyglobal.com/sourcecode/policy
+  ~
+  ~ Unless required by applicable law or agreed to in writing,
+  ~ software distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/tiny_margin"
+        android:layout_marginEnd="@dimen/tiny_margin"
+        app:cardBackgroundColor="@color/card_view_background"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true">
+        <RelativeLayout
+            android:id="@+id/layout_root"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/row_height_big"
+            android:background="@color/list_view_bg_color">
+
+            <ImageView
+                android:id="@+id/img_radio"
+                android:layout_width="@dimen/size_img_big"
+                android:layout_height="@dimen/size_img_big"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/dialog_margin"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_rect_img_default"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/small_margin"
+                android:layout_marginStart="@dimen/small_margin"
+                android:layout_toStartOf="@+id/btn_favourite"
+                android:layout_toEndOf="@+id/img_radio"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/app_name"
+                    android:textColor="@color/list_view_color_main_text"
+                    android:textSize="@dimen/text_size_body"
+                    android:textStyle="bold"/>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_des"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/info_copyright"
+                    android:textColor="@color/list_view_color_secondary_text"
+                    android:textSize="@dimen/text_size_body"
+                />
+            </LinearLayout>
+
+            <com.like.LikeButton
+                android:id="@+id/btn_favourite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/small_margin"
+                app:anim_scale_factor="2"
+                app:icon_size="@dimen/size_img_small"
+                app:like_drawable="@drawable/ic_heart_pink_36dp"
+                app:liked="false"
+                app:unlike_drawable="@drawable/ic_heart_outline_black_36dp"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
